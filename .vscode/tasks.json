@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compilar raylib oficial",
+            "type": "shell",
+            "command": "C:/raylib/w64devkit/bin/gcc.exe",
+            "args": [
+                "${file}",
+                "-o", "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-I", "C:/raylib/raylib/src", 
+                "-L", "C:/raylib/raylib/src",
+                "-lraylib",
+                "-lopengl32",
+                "-lgdi32",
+                "-lwinmm",
+                "-mwindows"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
