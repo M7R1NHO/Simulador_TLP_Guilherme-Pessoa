@@ -1,0 +1,42 @@
+# Arquivos de compilação
+build/
+bin/
+*.o
+*.exe
+*.out
+*.app
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile.cmake
+*.cmake
+!CMakeLists.txt
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Saves
+saves/*.sav
+saves/*.dat
+
+# Logs
+*.log
+debug.txt
+
+
+
+
+
+
+
+
